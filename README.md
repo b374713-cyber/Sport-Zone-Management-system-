@@ -1,2 +1,2 @@
 # Sport-Zone-Management-system-
-A full system for Management and reservation of  different sports   , and also a gaming room for  booking a session on a gaming device  also a sport clothes store reserving an items(brands clothes)   
+A full system for Management and reservation of  different sports   , and also a gaming room for  booking a session on a gaming device  also a sport clothes store reserving an items(brands clothes),we also offer the  payment online and the  paymnet cash, also with a notification allert on both mobile and the web  and AI service on both web and mobile with separtion in roles admin(more acces ) and employee limited to its job and to admin role and the  mobile is sparated  on th eother hand 
