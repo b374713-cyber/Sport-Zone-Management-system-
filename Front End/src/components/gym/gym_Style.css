@@ -1,0 +1,554 @@
+/* gym_Style.css - BRIGHTER THEME */
+
+/* Gym-themed color palette - BRIGHTER VERSION */
+:root {
+  --gym-primary: #4a6bff;       /* Brighter blue */
+  --gym-secondary: #00c9a7;     /* Brighter teal */
+  --gym-accent: #ffd166;        /* Brighter yellow */
+  --gym-light: #f8f9ff;         /* Brighter light */
+  --gym-dark: #2d3748;          /* Softer dark */
+  --gym-card-bg: #ffffff;       /* White card background */
+  --gym-success: #10b981;       /* Brighter green */
+  --gym-warning: #f59e0b;       /* Brighter orange */
+  --gym-danger: #ef4444;        /* Brighter red */
+}
+
+/* Floating action button animation */
+.floating-btn {
+  animation: float 3s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, var(--gym-primary), var(--gym-secondary)) !important;
+  border: none;
+}
+
+.floating-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(74, 107, 255, 0.3);
+  animation-play-state: paused;
+  background: linear-gradient(135deg, var(--gym-secondary), var(--gym-primary)) !important;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Card hover effects - Lighter */
+.gym-card {
+  transition: all 0.3s ease;
+  border: none;
+  overflow: hidden;
+  background-color: var(--gym-card-bg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+.gym-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(74, 107, 255, 0.15) !important;
+}
+
+/* Gradient backgrounds - Lighter */
+.gym-gradient-header {
+  background: linear-gradient(135deg, var(--gym-primary) 0%, var(--gym-secondary) 100%);
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.gym-gradient-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+  animation: movePattern 20s linear infinite;
+}
+
+@keyframes movePattern {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
+
+/* Status badges - Brighter */
+.status-badge {
+  font-size: 0.7em;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.badge.bg-success {
+  background: linear-gradient(135deg, var(--gym-success), #34d399) !important;
+  color: white !important;
+}
+
+.badge.bg-primary {
+  background: linear-gradient(135deg, var(--gym-primary), #6366f1) !important;
+  color: white !important;
+}
+
+.badge.bg-secondary {
+  background: linear-gradient(135deg, #94a3b8, #64748b) !important;
+  color: white !important;
+}
+
+/* Profile image styling - Simpler */
+.profile-img-container {
+  position: relative;
+  border: 3px solid white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.profile-img-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(74, 107, 255, 0.2);
+}
+
+/* Stats cards - Lighter */
+.stat-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
+  border: 1px solid rgba(74, 107, 255, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: rgba(74, 107, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(74, 107, 255, 0.1);
+}
+
+/* Loading skeleton - Lighter */
+.skeleton {
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 8px;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Custom scrollbar - Lighter */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--gym-primary), var(--gym-secondary));
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--gym-secondary), var(--gym-primary));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-btn {
+    position: fixed !important;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 45px !important;
+    height: 45px !important;
+  }
+  
+  .gym-card {
+    border-radius: 12px;
+  }
+}
+
+/* Pulse animation - Lighter */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(74, 107, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(74, 107, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(74, 107, 255, 0);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Active selection style - Lighter */
+.active-selection {
+  position: relative;
+  background: linear-gradient(90deg, rgba(74, 107, 255, 0.03), rgba(0, 201, 167, 0.03)) !important;
+  border-left: 4px solid var(--gym-primary) !important;
+}
+
+/* List item hover - Lighter */
+.list-group-item-action {
+  border-left: 4px solid transparent;
+  transition: all 0.2s ease;
+  margin: 2px 0;
+}
+
+.list-group-item-action:hover {
+  background: linear-gradient(90deg, rgba(74, 107, 255, 0.05), rgba(0, 201, 167, 0.05)) !important;
+  border-left-color: var(--gym-secondary) !important;
+  transform: translateX(2px);
+}
+
+/* Button styles - Brighter */
+.btn-outline-primary {
+  color: var(--gym-primary);
+  border-color: var(--gym-primary);
+}
+
+.btn-outline-primary:hover {
+  background: linear-gradient(135deg, var(--gym-primary), var(--gym-secondary));
+  color: white;
+  border-color: transparent;
+}
+
+.btn-outline-success {
+  color: var(--gym-success);
+  border-color: var(--gym-success);
+}
+
+.btn-outline-success:hover {
+  background: linear-gradient(135deg, var(--gym-success), #34d399);
+  color: white;
+  border-color: transparent;
+}
+
+/* Table styles - Cleaner */
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table thead th {
+  background: linear-gradient(135deg, #f8faff, #f1f5ff);
+  border-top: none;
+  font-weight: 600;
+  color: var(--gym-dark);
+  padding: 12px 16px;
+  border-bottom: 2px solid rgba(74, 107, 255, 0.1);
+}
+
+.table tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.table tbody tr:hover {
+  background: linear-gradient(90deg, rgba(74, 107, 255, 0.02), rgba(0, 201, 167, 0.02));
+}
+
+/* Progress bars - Brighter */
+.progress {
+  background-color: #f1f5f9;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, var(--gym-primary), var(--gym-secondary));
+}
+
+/* Input styles - Cleaner */
+.form-control {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--gym-primary);
+  box-shadow: 0 0 0 3px rgba(74, 107, 255, 0.1);
+}
+
+.input-group-text {
+  background: linear-gradient(135deg, #f8faff, #f1f5ff);
+  border-color: #e2e8f0;
+  color: var(--gym-dark);
+}
+
+/* Text colors */
+.text-muted {
+  color: #64748b !important;
+}
+
+.text-primary {
+  color: var(--gym-primary) !important;
+}
+
+.text-success {
+  color: var(--gym-success) !important;
+}
+
+/* Container padding */
+.container-fluid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Header text */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--gym-dark);
+  font-weight: 600;
+}
+
+/* Card body padding */
+.card-body {
+  padding: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .card-body {
+    padding: 1.5rem;
+  }
+}
+
+/* Selection style */
+::selection {
+  background: linear-gradient(135deg, rgba(74, 107, 255, 0.3), rgba(0, 201, 167, 0.3));
+  color: var(--gym-dark);
+}
+
+/* Focus outline */
+*:focus {
+  outline: 2px solid var(--gym-primary);
+  outline-offset: 2px;
+}
+
+/* Grid gaps */
+.row.g-4 {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 1.5rem;
+}
+
+/* Animation for new elements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+/* Coach/Member highlight colors */
+.coach-highlight {
+  background: linear-gradient(90deg, rgba(74, 107, 255, 0.03), rgba(74, 107, 255, 0.01));
+}
+
+.member-highlight {
+  background: linear-gradient(90deg, rgba(0, 201, 167, 0.03), rgba(0, 201, 167, 0.01));
+}
+
+/* Rating stars */
+.rating-stars {
+  color: #ffd700;
+  font-size: 1.1em;
+}
+
+/* Quick actions */
+.quick-action-btn {
+  transition: all 0.2s ease;
+  opacity: 0.8;
+}
+
+.quick-action-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Badge colors for different statuses */
+.badge.bg-active {
+  background: linear-gradient(135deg, #10b981, #34d399) !important;
+}
+
+.badge.bg-inactive {
+  background: linear-gradient(135deg, #94a3b8, #64748b) !important;
+}
+
+.badge.bg-pending {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24) !important;
+}
+
+/* Card titles */
+.card-title {
+  color: var(--gym-dark);
+  font-weight: 600;
+}
+
+/* Empty state */
+.empty-state {
+  color: #94a3b8;
+  padding: 3rem 1rem;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  opacity: 0.3;
+  margin-bottom: 1rem;
+}
+
+/* Loading spinner */
+.spinner-wrapper {
+  padding: 2rem;
+}
+
+/* Footer stats */
+.footer-stats {
+  background: linear-gradient(135deg, #f8faff, #f1f5ff);
+  border-top: 1px solid #e2e8f0;
+  padding: 1rem;
+  border-radius: 0 0 16px 16px;
+}
+
+/* Assign button highlight */
+.assign-highlight {
+  animation: assignPulse 1.5s infinite;
+  background: linear-gradient(135deg, #ffd166, #ffb347) !important;
+  border: none;
+  color: #000 !important;
+  font-weight: 600;
+}
+
+@keyframes assignPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 209, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(255, 209, 102, 0);
+  }
+}
+
+/* Modal styles */
+.modal-content {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  background: linear-gradient(135deg, var(--gym-primary), var(--gym-secondary));
+  color: white;
+  border-radius: 16px 16px 0 0;
+  border: none;
+}
+
+/* Tooltip styles */
+.tooltip-inner {
+  background: linear-gradient(135deg, var(--gym-dark), #4a5568);
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+.tooltip-arrow::before {
+  border-top-color: var(--gym-dark) !important;
+}
+
+/* Assign action styles */
+.assign-action {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.assign-action:hover::after {
+  content: 'Assign →';
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, var(--gym-primary), var(--gym-secondary));
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8em;
+  font-weight: 600;
+  white-space: nowrap;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+/* Responsive text */
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .display-5 {
+    font-size: 1.5rem;
+  }
+  
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print,
+  .floating-btn,
+  .btn,
+  .assign-action::after {
+    display: none !important;
+  }
+  
+  .gym-card {
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+    break-inside: avoid;
+  }
+}

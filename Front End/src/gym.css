@@ -1,0 +1,68 @@
+/* src/gym.css */
+
+.gym-reminders-wrap {
+  padding: 16px;
+}
+
+.gym-reminders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 12px;
+}
+
+.gym-reminder-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.gym-reminder-title {
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.gym-reminder-sub {
+  color: #667085;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.gym-reminder-days {
+  margin-top: 10px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.gym-day-pill {
+  background: #eef2f6;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.gym-reminder-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.gym-btn {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.gym-btn-primary {
+  background: #0a7ea4;
+  color: white;
+}
+
+.gym-btn-secondary {
+  background: #f2f4f7;
+  color: #111;
+}

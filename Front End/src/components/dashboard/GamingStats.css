@@ -1,0 +1,167 @@
+.gaming-stats-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* section titles */
+.section-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 8px 0 12px;
+}
+
+/* grid of device cards */
+.device-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+/* Device stat card */
+.device-stat-card {
+  border-radius: 16px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* chip */
+.device-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  background: #f4f6ff;
+  width: fit-content;
+}
+
+.device-icon {
+  font-size: 18px;
+}
+.device-label {
+  font-size: 14px;
+}
+
+/* arrows / trend label */
+.trend-arrow {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f7f7f7;
+  color: #333;
+}
+.trend-arrow.played {
+  background: rgba(255, 193, 7, 0.12);
+  color: #b57a00;
+}
+.trend-arrow.time {
+  background: rgba(13, 202, 240, 0.12);
+  color: #007b8f;
+}
+
+/* header row */
+.device-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* stats inside card */
+.device-stats-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.stat-box {
+  background: #f8f9ff;
+  border-radius: 12px;
+  padding: 8px;
+  text-align: center;
+}
+
+.stat-title {
+  font-size: 12px;
+  color: #666;
+}
+
+.stat-value {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* progress */
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+}
+
+.soft-progress {
+  height: 9px;
+  border-radius: 999px;
+}
+
+/* income big card */
+.stats-income-card {
+  border-radius: 18px;
+  background: linear-gradient(135deg, #ffffff, #f7fff8);
+  position: relative;
+}
+
+.big-income {
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+}
+
+.tiny-note {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Money background icon */
+.income-bg {
+  position: absolute;
+  font-size: 110px;
+  opacity: 0.07;
+  right: 10px;
+  bottom: -10px;
+  pointer-events: none;
+}
+
+/* glow themes */
+.pc-glow {
+  border: 1px solid rgba(0, 123, 255, 0.25);
+  background: rgba(0, 123, 255, 0.03);
+}
+.console-glow {
+  border: 1px solid rgba(111, 66, 193, 0.25);
+  background: rgba(111, 66, 193, 0.03);
+}
+
+/* floating icons background */
+.floating-icon {
+  position: absolute;
+  font-size: 80px;
+  opacity: 0.05;
+  z-index: 0;
+  animation: floaty 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.float-1 { top: -10px; right: 8%; animation-delay: 0s; }
+.float-2 { top: 40%; left: 5%; animation-delay: 1.5s; }
+.float-3 { bottom: -25px; right: 20%; animation-delay: 3s; }
+.float-4 { bottom: 30%; left: 20%; animation-delay: 2s; }
+
+@keyframes floaty {
+  0%   { transform: translateY(0px) rotate(0deg); }
+  50%  { transform: translateY(-18px) rotate(6deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}

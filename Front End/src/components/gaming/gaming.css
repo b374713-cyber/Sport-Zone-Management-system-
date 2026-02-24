@@ -1,0 +1,413 @@
+/* ============================================================
+   GAMING ZONE – RGB PREMIUM DESIGN (ONLY FOR GamingZone)
+   ============================================================ */
+
+/* -------- Wrapper around the whole Gaming Zone card -------- */
+.gaming-zone-wrapper {
+  border-radius: 28px;
+  padding: 6px;
+  background:
+    radial-gradient(circle at 0% 0%, #22d3ee 0, transparent 55%),
+    radial-gradient(circle at 100% 0%, #a855f7 0, transparent 55%),
+    radial-gradient(circle at 0% 100%, #f97316 0, transparent 55%),
+    radial-gradient(circle at 100% 100%, #22c55e 0, transparent 55%);
+}
+
+/* -----------------------------------------------------------
+   MAIN GAMING CARD – GLASS + RGB EDGE
+----------------------------------------------------------- */
+.gaming-zone-card {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  color: #e5e7eb;
+  background: radial-gradient(circle at 20% 0%, #1d284b 0%, #020617 45%, #020617 100%);
+}
+
+/* RGB halo behind the card (LED strip effect) */
+.gaming-zone-card::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: conic-gradient(
+    from 180deg,
+    #22d3ee,
+    #6366f1,
+    #a855f7,
+    #ec4899,
+    #f97316,
+    #22c55e,
+    #22d3ee
+  );
+  opacity: 0.25;
+  filter: blur(40px);
+  z-index: -1;
+  pointer-events: none;
+  animation: gamingGlow 16s linear infinite;
+}
+
+@keyframes gamingGlow {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Inner background of the card */
+.gaming-zone-card .card-body {
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(56,189,248,0.26), transparent 55%),
+    radial-gradient(circle at 100% 0%, rgba(167,139,250,0.26), transparent 55%),
+    radial-gradient(circle at 0% 100%, rgba(244,114,182,0.22), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(74,222,128,0.18), transparent 55%),
+    radial-gradient(circle at 50% 50%, #020617 0%, #020617 70%, #020617 100%);
+}
+
+/* -----------------------------------------------------------
+   TABS BAR (Live / Players / Spin)
+----------------------------------------------------------- */
+
+.gaming-tabs {
+  position: relative;
+  border-bottom: none;
+  padding: 6px;
+  border-radius: 999px;
+  margin-bottom: 1.75rem !important;
+  background: linear-gradient(90deg, #22d3ee, #a855f7, #22c55e);
+  box-shadow: 0 0 26px rgba(59,130,246,0.5);
+}
+
+.gaming-tabs .nav-item {
+  position: relative;
+  z-index: 1;
+}
+
+.gaming-tabs .nav-link {
+  border: none !important;
+  border-radius: 999px !important;
+  padding: 0.45rem 1.4rem !important;
+  margin: 0 2px;
+  background: rgba(15,23,42,0.92) !important;
+  color: #e5e7eb !important;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: all 0.22s ease-out !important;
+}
+
+.gaming-tabs .nav-link:hover {
+  transform: translateY(-1px);
+  background: rgba(15,23,42,0.98) !important;
+}
+
+.gaming-tabs .nav-link.active {
+  color: #020617 !important;
+  background: linear-gradient(135deg, #22d3ee, #4ade80) !important;
+  box-shadow: 0 0 18px rgba(34,197,94,0.7);
+}
+
+/* -----------------------------------------------------------
+   GENERAL ROOM LIST / HEADER (from your previous file)
+----------------------------------------------------------- */
+
+.room-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room-header .title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.room-header .refresh-btn {
+  background: linear-gradient(90deg, #6a5af9, #9d3cff);
+  border: none;
+  padding: 6px 14px;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.room-header .refresh-btn:hover {
+  opacity: 0.8;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* ROOM LIST */
+.room-list {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.room-item {
+  background: rgba(15,23,42,0.9);
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(148,163,184,0.3);
+}
+
+.room-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.room-name {
+  font-weight: 600;
+  color: #bfdbfe;
+}
+
+.room-capacity {
+  opacity: 0.7;
+  color: #9ca3af;
+}
+
+.room-bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #020617;
+  margin-bottom: 6px;
+}
+
+.room-bar-fill {
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+/* COLORS FOR ROOM OCCUPANCY */
+.occ-green .room-bar-fill {
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+}
+
+.occ-yellow .room-bar-fill {
+  background: linear-gradient(90deg, #facc15, #eab308);
+}
+
+.occ-red .room-bar-fill {
+  background: linear-gradient(90deg, #fb7185, #e11d48);
+}
+
+.room-percent {
+  font-size: 14px;
+  text-align: right;
+  opacity: 0.85;
+}
+
+/* -----------------------------------------------------------
+   GLASSY INNER CARDS (Active Sessions / Room Occupancy)
+----------------------------------------------------------- */
+
+.gaming-zone-card .card-header {
+  background: linear-gradient(120deg, rgba(15,23,42,0.98), rgba(17,24,39,0.98));
+  border-bottom: 1px solid rgba(148,163,184,0.35);
+}
+
+.gaming-zone-card .card-header h5,
+.gaming-zone-card .card-header small {
+  color: #e5e7eb;
+}
+
+.gaming-zone-card .card {
+  background: rgba(15,23,42,0.82);
+  border-radius: 18px;
+  border: 1px solid rgba(148,163,184,0.35);
+  box-shadow: 0 18px 40px rgba(15,23,42,0.85);
+}
+
+.gaming-zone-card .card-body {
+  color: #e5e7eb;
+}
+
+/* TABLES inside GamingZone */
+.gaming-zone-card table thead {
+  background: linear-gradient(90deg, #111827, #020617);
+  color: #e5e7eb;
+}
+
+.gaming-zone-card table tbody tr {
+  background-color: rgba(3,7,18,0.96);
+  color: #e5e7eb;
+}
+
+.gaming-zone-card table tbody tr:nth-child(even) {
+  background-color: rgba(15,23,42,0.9);
+}
+
+.gaming-zone-card table tbody tr:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(79,70,229,0.45),
+    rgba(16,185,129,0.3)
+  );
+}
+
+/* -----------------------------------------------------------
+   LAYOUT (wheel + text)
+----------------------------------------------------------- */
+
+.gaming-grid {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  gap: 24px;
+  align-items: center;
+}
+
+/* ===========================================================
+   SPIN WHEEL – SMALL, MULTI-COLOR, NO NAMES
+=========================================================== */
+
+.spin-wheel-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+/* Wheel size */
+.spin-wheel-wrapper {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 16px auto;
+}
+
+/* Rotating circle */
+.spin-wheel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(129, 140, 248, 0.9);
+  box-shadow:
+    0 0 30px rgba(129, 140, 248, 0.9),
+    0 0 60px rgba(236, 72, 153, 0.75);
+  background: radial-gradient(circle at 30% 30%, #020617, #000000);
+}
+
+/* Arrow at the top */
+.spin-wheel-pointer {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 18px solid #facc15;
+  z-index: 3;
+}
+
+/* Each colored slice – color is set inline in SpinWheel.js */
+.spin-wheel-segment {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+  opacity: 0.98;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.7) inset;
+}
+
+/* When there are no players */
+.spin-wheel-empty {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 2px dashed #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 0.9rem;
+  background: radial-gradient(circle, #020617, #000000);
+}
+
+/* Optional helper for any text if needed */
+.spin-wheel-label-text {
+  display: inline-block;
+  transform-origin: left center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.winner-gold-row {
+  background: linear-gradient(45deg, #fff9c4, #ffeb3b) !important;
+  border-left: 4px solid #ff9800 !important;
+}
+
+.winner-gold-row td {
+  font-weight: 600;
+  color: #333;
+}
+
+.gold-offer {
+  background: linear-gradient(45deg, #ffeb3b, #ff9800);
+  border: 2px solid #ff9800;
+  color: #333 !important;
+  font-weight: bold;
+}
+
+.gold-offer:hover {
+  background: linear-gradient(45deg, #ff9800, #ffeb3b);
+  border-color: #ff9800;
+}
+/* Gold option in dropdown */
+select option.gold-option {
+  background: linear-gradient(45deg, #ffeb3b, #ff9800) !important;
+  color: #000 !important;
+  font-weight: bold !important;
+}
+
+/* Gold highlight for winner customers in dropdown */
+.gold-customer-option {
+  background-color: #fff9c4 !important;
+  font-weight: bold;
+  border-left: 3px solid #ff9800;
+}
+/* Winner player name gold pill */
+.winner-name-gold {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: linear-gradient(45deg, #ffeb3b, #ff9800);
+  color: #111 !important;
+  font-weight: 900;
+  border: 1px solid rgba(255, 152, 0, 0.9);
+  box-shadow: 0 6px 18px rgba(255, 193, 7, 0.25);
+}
+
+/* Gold pill for FREE_3H in Session Summary */
+.gold-offer-pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: linear-gradient(45deg, #ffeb3b, #ff9800);
+  color: #111 !important;
+  font-weight: 900;
+  border: 1px solid rgba(255, 152, 0, 0.9);
+}
+
+/* Gold badge for FREE sessions */
+.free-session-badge {
+  background: linear-gradient(45deg, #ffeb3b, #ff9800);
+  color: #000;
+  font-weight: bold;
+  border: 1px solid #ff9800;
+}
