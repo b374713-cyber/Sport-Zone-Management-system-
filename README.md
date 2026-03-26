@@ -5,8 +5,6 @@ Sport Zone is a full-stack management platform designed to unify multiple servic
 
 The system provides both web and mobile applications with real-time communication, AI-powered features, and flexible payment methods.
 
----
-
 ## Key Features
 
 ### Sports Booking
@@ -15,16 +13,12 @@ The system provides both web and mobile applications with real-time communicatio
 - Daily limits and structured booking system
 - Online payment (Stripe) or cash payment at the center
 
----
-
 ### Gaming Zone
 - Book gaming sessions (PC / Console)
 - Fixed or open session types
 - Points system (1 hour = 1 point)
 - Reward system with AI-based winner selection (Gemini AI)
 - Free session rewards for winners
-
----
 
 ### Gym Management
 - Membership applications and approvals
@@ -33,8 +27,6 @@ The system provides both web and mobile applications with real-time communicatio
 - Progress monitoring
 - AI-generated workout and nutrition plans with PDF export
 
----
-
 ### Store System
 - Browse and reserve sports items (brands, clothes, accessories)
 - Reservation valid for 48 hours
@@ -42,20 +34,15 @@ The system provides both web and mobile applications with real-time communicatio
 - Pickup system using secure code
 - AI-based product recommendations (Grok AI)
 
----
-
 ### Real-Time Communication
 - Live chat between customers and employees
 - Instant notifications for all actions (reservations, payments, approvals)
 
----
 
 ### Payment System
 - Online payments via Stripe
 - Cash payments handled in the center
 - Automatic notifications for all transactions
-
----
 
 ## User Roles
 
@@ -66,7 +53,6 @@ The system provides both web and mobile applications with real-time communicatio
 - AI-powered analytics and PDF reports
 - Manage job applications and system operations
 
----
 
 ### Employee
 - Manage reservations (sports, gaming, store)
@@ -75,7 +61,6 @@ The system provides both web and mobile applications with real-time communicatio
 - Manage store orders and pickups
 - Communicate with customers via live chat
 
----
 
 ### Customer (Mobile Application)
 - Register and verify account
@@ -86,7 +71,6 @@ The system provides both web and mobile applications with real-time communicatio
 - Use AI services (workout plans, nutrition, recommendations)
 - Receive real-time notifications
 
----
 
 ## AI Features
 - Workout plan generator
@@ -95,7 +79,6 @@ The system provides both web and mobile applications with real-time communicatio
 - Reward system with AI-based selection
 - Analytics and reporting
 
----
 
 ## Tech Stack
 
@@ -118,8 +101,6 @@ The system provides both web and mobile applications with real-time communicatio
 - Gemini AI
 - Grok API
 
----
-
 ## System Highlights
 - Multi-role system (Admin, Employee, Customer)
 - Real-time communication and notifications
@@ -127,7 +108,6 @@ The system provides both web and mobile applications with real-time communicatio
 - AI-powered features
 - Complete booking and payment ecosystem
 
----
 
 ## Project Structure
 - Web Application (Admin and Employee)
@@ -135,7 +115,6 @@ The system provides both web and mobile applications with real-time communicatio
 - Backend API
 - Database (SQL Server)
 
----
 
 ## Conclusion
 Sport Zone is a complete smart management system that combines multiple domains into one scalable platform, improving efficiency, user experience, and operational control.
