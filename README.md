@@ -1,5 +1,5 @@
 # Sport Zone Management System
-
+> **Senior Project | Score: 90/100 | 3 Months**
 ## Overview
 Sport Zone is a full-stack management platform designed to unify multiple services into one system. It integrates sports facility booking, gym management, gaming sessions, and a sports store into a single ecosystem for customers, employees, and administrators.
 
