@@ -9,12 +9,20 @@ The system provides both web and mobile applications with real-time communicatio
 ## 🎥 Demo Videos
 
 ### 📱 Mobile Application (Customer)
-[![Mobile App Demo](https://img.shields.io/badge/Watch-Mobile%20Demo-blue?style=for-the-badge&logo=google-drive)](https://drive.google.com/file/d/16Xc3ZC59-DFRIpR6Ml3PPsrebzDoIhND/view?usp=drive_link)
+
+[![Mobile App Demo](https://img.youtube.com/vi/placeholder/maxresdefault.jpg)](https://drive.google.com/file/d/16Xc3ZC59-DFRIpR6Ml3PPsrebzDoIhND/view?usp=drive_link)
+
+*Click the image above to watch the mobile demo video on Google Drive*
+
+---
 
 ### 💻 Web Platform (Admin & Employee)
-[![Web Platform Demo](https://img.shields.io/badge/Watch-Web%20Demo-green?style=for-the-badge&logo=google-drive)](https://drive.google.com/file/d/1ShrHuXAP8lfQn_vYEqWw5aIdm3lTck5h/view?usp=drive_link)
 
-*Click the links above to watch the demo videos on Google Drive.*
+[![Web Platform Demo](https://img.youtube.com/vi/placeholder/maxresdefault.jpg)](https://drive.google.com/file/d/1ShrHuXAP8lfQn_vYEqWw5aIdm3lTck5h/view?usp=drive_link)
+
+*Click the image above to watch the web demo video on Google Drive*
+
+---
 
 ## Key Features
 
@@ -122,5 +130,3 @@ The system provides both web and mobile applications with real-time communicatio
 
 ## Conclusion
 Sport Zone is a complete smart management system that combines multiple domains into one scalable platform, improving efficiency, user experience, and operational control.
-
----
