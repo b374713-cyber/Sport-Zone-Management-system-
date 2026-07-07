@@ -1,21 +1,20 @@
 # Sport Zone Management System
 > **Senior Project | Score: 90/100 | 3 Months**
+
 ## Overview
 Sport Zone is a full-stack management platform designed to unify multiple services into one system. It integrates sports facility booking, gym management, gaming sessions, and a sports store into a single ecosystem for customers, employees, and administrators.
 
 The system provides both web and mobile applications with real-time communication, AI-powered features, and flexible payment methods.
 
-
-
 ## 🎥 Demo Videos
 
 ### 📱 Mobile Application (Customer)
-[![Mobile App Demo]([https://drive.google.com/thumbnail?id=1ruROlyQgKwKnlICHy2G6aZbz4qGADzLA)](https://drive.google.com/file/d/1ruROlyQgKwKnlICHy2G6aZbz4qGADzLA/view?usp=drivesdk](https://drive.google.com/file/d/16Xc3ZC59-DFRIpR6Ml3PPsrebzDoIhND/view))
+[![Mobile App Demo](https://img.shields.io/badge/Watch-Mobile%20Demo-blue?style=for-the-badge&logo=google-drive)](https://drive.google.com/file/d/16Xc3ZC59-DFRIpR6Ml3PPsrebzDoIhND/view?usp=drive_link)
 
 ### 💻 Web Platform (Admin & Employee)
-[![Web Platform Demo]([https://drive.google.com/thumbnail?id=1t3GO8dn1_QJ5DDzcoNIeKX0cvkIMDmQt)](https://drive.google.com/file/d/1t3GO8dn1_QJ5DDzcoNIeKX0cvkIMDmQt/view?usp=drivesdk](https://drive.google.com/drive/u/2/folders/1pe2YAKU0hKwEE5fOL5saXKwmqe7okeZE))
+[![Web Platform Demo](https://img.shields.io/badge/Watch-Web%20Demo-green?style=for-the-badge&logo=google-drive)](https://drive.google.com/file/d/1ShrHuXAP8lfQn_vYEqWw5aIdm3lTck5h/view?usp=drive_link)
 
-*Click the images above to watch the demo videos on Google Drive.*
+*Click the links above to watch the demo videos on Google Drive.*
 
 ## Key Features
 
@@ -50,7 +49,6 @@ The system provides both web and mobile applications with real-time communicatio
 - Live chat between customers and employees
 - Instant notifications for all actions (reservations, payments, approvals)
 
-
 ### Payment System
 - Online payments via Stripe
 - Cash payments handled in the center
@@ -65,14 +63,12 @@ The system provides both web and mobile applications with real-time communicatio
 - AI-powered analytics and PDF reports
 - Manage job applications and system operations
 
-
 ### Employee
 - Manage reservations (sports, gaming, store)
 - Handle payments and invoices
 - Approve gym memberships
 - Manage store orders and pickups
 - Communicate with customers via live chat
-
 
 ### Customer (Mobile Application)
 - Register and verify account
@@ -83,14 +79,12 @@ The system provides both web and mobile applications with real-time communicatio
 - Use AI services (workout plans, nutrition, recommendations)
 - Receive real-time notifications
 
-
 ## AI Features
 - Workout plan generator
 - Nutrition plan generator
 - Product recommendation system
 - Reward system with AI-based selection
 - Analytics and reporting
-
 
 ## Tech Stack
 
@@ -120,13 +114,13 @@ The system provides both web and mobile applications with real-time communicatio
 - AI-powered features
 - Complete booking and payment ecosystem
 
-
 ## Project Structure
 - Web Application (Admin and Employee)
 - Mobile Application (Customer)
 - Backend API
 - Database (SQL Server)
 
-
 ## Conclusion
 Sport Zone is a complete smart management system that combines multiple domains into one scalable platform, improving efficiency, user experience, and operational control.
+
+---
