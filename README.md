@@ -6,35 +6,14 @@ Sport Zone is a full-stack management platform designed to unify multiple servic
 
 The system provides both web and mobile applications with real-time communication, AI-powered features, and flexible payment methods.
 
----
-
 ## 🎥 Demo Videos
 
-<div style="display: flex; gap: 20px; flex-wrap: wrap;">
+| Platform | Demo Link |
+|----------|-----------|
+| 📱 Mobile Application (Customer) | [Watch Demo](https://drive.google.com/file/d/16Xc3ZC59-DFRIpR6Ml3PPsrebzDoIhND/view?usp=drive_link) |
+| 💻 Web Platform (Admin & Employee) | [Watch Demo](https://drive.google.com/file/d/1ShrHuXAP8lfQn_vYEqWw5aIdm3lTck5h/view?usp=drive_link) |
 
-<div style="border: 2px solid #e1e4e8; border-radius: 12px; padding: 15px; width: 45%; min-width: 300px; background: #f6f8fa;">
-
-### 📱 Mobile Application (Customer)
-
-[![Mobile App Demo](https://placehold.co/600x350/1a73e8/FFFFFF?text=📱+Mobile+App+Demo)](https://drive.google.com/file/d/16Xc3ZC59-DFRIpR6Ml3PPsrebzDoIhND/view?usp=drive_link)
-
-*Click the image above to watch the mobile demo*
-
-</div>
-
-<div style="border: 2px solid #e1e4e8; border-radius: 12px; padding: 15px; width: 45%; min-width: 300px; background: #f6f8fa;">
-
-### 💻 Web Platform (Admin & Employee)
-
-[![Web Platform Demo](https://placehold.co/600x350/2da44e/FFFFFF?text=🌐+Web+Platform+Demo)](https://drive.google.com/file/d/1ShrHuXAP8lfQn_vYEqWw5aIdm3lTck5h/view?usp=drive_link)
-
-*Click the image above to watch the web demo video*
-
-</div>
-
-</div>
-
----
+*Click the links above to watch the demo videos on Google Drive.*
 
 ## Key Features
 
