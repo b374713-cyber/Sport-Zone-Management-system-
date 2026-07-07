@@ -10,10 +10,10 @@ The system provides both web and mobile applications with real-time communicatio
 ## 🎥 Demo Videos
 
 ### 📱 Mobile Application (Customer)
-[![Mobile App Demo](https://drive.google.com/thumbnail?id=1ruROlyQgKwKnlICHy2G6aZbz4qGADzLA)](https://drive.google.com/file/d/1ruROlyQgKwKnlICHy2G6aZbz4qGADzLA/view?usp=drivesdk)
+[![Mobile App Demo]([https://drive.google.com/thumbnail?id=1ruROlyQgKwKnlICHy2G6aZbz4qGADzLA)](https://drive.google.com/file/d/1ruROlyQgKwKnlICHy2G6aZbz4qGADzLA/view?usp=drivesdk](https://drive.google.com/file/d/16Xc3ZC59-DFRIpR6Ml3PPsrebzDoIhND/view))
 
 ### 💻 Web Platform (Admin & Employee)
-[![Web Platform Demo](https://drive.google.com/thumbnail?id=1t3GO8dn1_QJ5DDzcoNIeKX0cvkIMDmQt)](https://drive.google.com/file/d/1t3GO8dn1_QJ5DDzcoNIeKX0cvkIMDmQt/view?usp=drivesdk)
+[![Web Platform Demo]([https://drive.google.com/thumbnail?id=1t3GO8dn1_QJ5DDzcoNIeKX0cvkIMDmQt)](https://drive.google.com/file/d/1t3GO8dn1_QJ5DDzcoNIeKX0cvkIMDmQt/view?usp=drivesdk](https://drive.google.com/drive/u/2/folders/1pe2YAKU0hKwEE5fOL5saXKwmqe7okeZE))
 
 *Click the images above to watch the demo videos on Google Drive.*
 
